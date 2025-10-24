@@ -1,8 +1,8 @@
 [
   {
     "name": "Henrique Raulino",
-    "role": "Coordenador e Dev Júnior",
-    "stack": "React, NestJS, PostgreSQL",
+    "role": "Coordenador e Dev Full Stack",
+    "stack": "Next.js, NestJS, PostgreSQL",
     "github": "https://github.com/rickalves",
     "image": "assets/images/rick.jpg"
   }
