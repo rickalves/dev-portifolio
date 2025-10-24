@@ -1,4 +1,4 @@
-# 💻 DevPortfolio – Portfólio Colaborativo de Desenvolvedores Júnior
+# 💻 DevPortfolio – Portfólio Colaborativo
 
 Um projeto simples e colaborativo para que cada integrante da equipe **adicione seu próprio card de perfil** em um site estático.
 O objetivo é **praticar o uso do Git e GitHub** em um fluxo real de contribuição com **branch, pull request, issues e revisão de código**.
@@ -72,26 +72,78 @@ Você vai adicionar suas informações em `data/profiles.json`:
 
 ---
 
-## 🌿 Fluxo de Contribuição
+# 🔄 Fluxo de Contribuição (Git/GitHub)
 
-1. **Crie uma branch nova**
+Um resumo simples do processo profissional de contribuição em equipe.
 
-   ```bash
-   git checkout -b feature/seu-nome
-   ```
-2. **Adicione suas mudanças**
+---
 
-   ```bash
-   git add .
-   git commit -m "Adiciona card de [Seu Nome]"
-   ```
-3. **Envie para o repositório remoto**
+## 🧭 Estrutura de Branches
 
-   ```bash
-   git push origin feature/seu-nome
-   ```
-4. **Abra um Pull Request (PR)** no GitHub
-5. **Espere a revisão e o merge** ✨
+| Branch       | Função                                              |
+| ------------ | --------------------------------------------------- |
+| **main**     | Código em produção (sempre estável)                 |
+| **develop**  | Código em desenvolvimento e integração              |
+| **feature/** | Novas funcionalidades criadas a partir de `develop` |
+
+---
+
+## 🚀 Passo a Passo
+
+### 1️⃣ Atualize sua base local
+
+```bash
+git checkout develop
+git pull origin develop
+```
+
+### 2️⃣ Crie sua branch de feature
+
+```bash
+git checkout -b feature/seu-nome-da-feature
+```
+
+### 3️⃣ Faça as alterações e commits
+
+```bash
+git add .
+git commit -m "feat(profiles): Adiciona card de seu-nome"
+```
+
+### 4️⃣ Envie sua branch para o repositório remoto
+
+```bash
+git push origin feature/seu-nome-da-feature
+```
+
+### 5️⃣ Abra um Pull Request (PR)
+
+* Base: `develop`
+* Compare: `feature/seu-nome-da-feature`
+* Descreva o que foi feito 📝
+* Marque colegas para revisão 👀
+
+### 6️⃣ Após aprovação e merge
+
+O **maintainer** faz o merge do PR → `develop`.
+
+### 7️⃣ Sincronize sua base novamente
+
+```bash
+git checkout develop
+git pull origin develop
+git branch -d feature/seu-nome-da-feature
+```
+
+---
+
+## 💡 Dicas Rápidas
+
+* ❌ **Não trabalhe na branch main.**
+* ✅ Sempre crie **branches de feature**.
+* 💬 Faça commits pequenos e descritivos.
+* 🧹 Atualize sua branch antes do PR (`git pull origin develop`).
+* 🙌 Sempre use PR (sem push direto na main/develop).
 
 ---
 
@@ -123,13 +175,5 @@ Agradecemos a todos os desenvolvedores que contribuíram para este projeto! 🙌
   <img src="https://contrib.rocks/image?repo=ti-eeepdjmm/dev-portifolio" />
 </a>
 
-
----
-
-### 🌎 Demo (futuro)
-
-Quando o projeto estiver concluído, poderá ser publicado via **GitHub Pages**:
-
-> [https://seuuser.github.io/dev-portfolio](https://seuuser.github.io/dev-portfolio)
 
 ---
