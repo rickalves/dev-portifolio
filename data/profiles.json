@@ -1,5 +1,12 @@
 [
   {
+    "name": "Henrique Raulino",
+    "role": "Coordenador e Dev Full Stack",
+    "stack": "Next.js, NestJS, PostgreSQL",
+    "github": "https://github.com/rickalves",
+    "image": "assets/images/rick.jpg"
+  },
+  {
     "name": "Álvaro Guilherme",
     "role": "Dev Front End",
     "stack": "HTML, CSS, JavaScript",
