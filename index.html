@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevPortfolio - Equipe de Programadores</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>DevHUB · Portfólio Colaborativo</title>
+    <!-- Metadados -->
+    <meta name="description" content="DevHUB — Portfólio colaborativo para desenvolvedores júnior. Aprenda Git/GitHub contribuindo com seu card." />
+    <meta name="theme-color" content="#007BFF" />
+    <!-- Favicon (opcional) -->
+    <link rel="icon" href="assets/images/favicon.png" />
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Dev Portfólio</h1>
-      <p>Um projeto colaborativo para nossa equipe de desenvolvedores júnior 🚀</p>
+    <!-- ======= HERO / HEADER ======= -->
+    <header role="banner" aria-label="Topo do site DevHUB">
+      <div class="hero">
+        <img
+          class="logo"
+          src="assets/images/logo_devhub.png"
+          alt="Logotipo DevHUB"
+        />
+      </div>
     </header>
 
-    <main>
-      <section id="profiles" class="container">
-        <!-- Cards serão carregados aqui via JS -->
+    <!-- ======= MAIN ======= -->
+    <main id="conteudo" role="main">
+      <h1>DevHUB - Portfólio colaborativo para a equipe de Devs da EPDJMM🚀</h1>
+      <!-- Perfis -->
+      <section
+        id="profiles"
+        class="container"
+        aria-label="Lista de perfis de desenvolvedores"
+      >
+        <!-- Cards serão injetados via JS (scripts/main.js) -->
+        <div id="empty-state" style="text-align:center; color: var(--muted);">
+          <p>Carregando perfis…</p>
+          <noscript>Ative o JavaScript para ver os perfis.</noscript>
+        </div>
+      </section>
+
+      <!-- Chamada para contribuir -->
+      <section aria-label="Como contribuir" class="contribuir">
+        <p style="color: var(--muted); max-width: 720px; margin: 0 auto;">
+          Quer aparecer aqui? Faça um fork, crie sua <strong>feature branch</strong>,
+          adicione seu card em <code>data/profiles.json</code> e abra um <strong>Pull Request</strong> para <code>develop</code>. 🎉
+        </p>
       </section>
     </main>
 
-    <footer>
-      <p>Feito com 💙 pelo curso Técnico em Informática — <a href="https://github.com/tiepdjmm">GitHub</a></p>
+    <!-- ======= FOOTER ======= -->
+    <footer role="contentinfo">
+      <p>
+        &copy; 2025 Todos os direitos reservados. 
+      </p>
+      <p>
+        Desenvolvido por Técnico em Informática -
+        <a href="https://github.com/tiepdjmm" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <!-- Scripts -->
+    <script src="scripts/main.js" defer></script>
+    <script>
+      // remover estado vazio quando os cards forem carregados (scripts/main.js popula #profiles)
+      window.addEventListener('load', () => {
+        const empty = document.getElementById('empty-state');
+        if (empty) empty.remove();
+      });
+    </script>
   </body>
 </html>
