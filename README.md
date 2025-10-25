@@ -1,4 +1,4 @@
-# 💻 DevPortfolio – Portfólio Colaborativo
+# 💻 DevHUB – Portfólio Colaborativo
 
 Um projeto simples e colaborativo para que cada integrante da equipe **adicione seu próprio card de perfil** em um site estático.
 O objetivo é **praticar o uso do Git e GitHub** em um fluxo real de contribuição com **branch, pull request, issues e revisão de código**.
@@ -23,7 +23,7 @@ Ao final, teremos um **site com cards de todos os devs do grupo**. 😎
 ## 🧱 Estrutura do Projeto
 
 ```
-dev-portfolio/
+devhub/
 ├── index.html
 ├── styles/
 │   └── style.css
