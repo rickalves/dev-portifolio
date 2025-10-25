@@ -12,5 +12,11 @@
     "stack": "HTML, CSS, JavaScript",
     "github": "https://github.com/Alvagui7",
     "image": "assets/images/alva.jpg"
+  },
+    "name": "André Bandeira",
+    "role": "Técnico em Informática e Dev Front-end",
+    "stack": "React, TailwindCSS, MongoDB",
+    "github": "https://github.com/andre-0303",
+    "image": "assets/images/bandeira.jpg"
   }
 ]
