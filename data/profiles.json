@@ -27,4 +27,13 @@
     "github": "https://github.com/MariaClaraSampaio",
     "image": "assets/images/mclara.jpeg"
   }
+
+ {
+  "name": "Pedro Renan",
+  "role": "Dev Front End",
+  "stack": "HTML, CSS, JavaScript",
+  "github": "https://github.com/renan1213",
+  "image": "assets/images/Renan.jpeg"
+}
 ]
+
